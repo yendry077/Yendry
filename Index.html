@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de peso en planetas</title>
+	<link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Calculadora de peso en planetas</h1>
+		<form>
+			<label for="peso">Ingresa tu peso en kg:</label>
+			<input type="number" id="peso" name="peso" required>
+
+			<label for="planetas">Selecciona un planeta:</label>
+			<select id="planetas" name="planetas">
+				<option value="Mercurio">Mercurio</option>
+				<option value="Venus">Venus</option>
+				<option value="Tierra">Tierra</option>
+				<option value="Marte">Marte</option>
+				<option value="Jupiter">Júpiter</option>
+				<option value="Saturno">Saturno</option>
+				<option value="Urano">Urano</option>
+				<option value="Neptuno">Neptuno</option>
+			</select>
+
+			<button type="button" onclick="calcularPeso()">Calcular peso</button>
+
+			<label for="resultado">Peso en el planeta seleccionado:</label>
+			<input type="text" id="resultado" name="resultado" readonly>
+		</form>
+	</div>
+
+	<script src="Peso.js"></script>
+</body>
+</html>
+
